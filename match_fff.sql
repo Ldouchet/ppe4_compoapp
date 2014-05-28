@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Mer 19 Mars 2014 à 15:05
+-- Généré le: Mer 28 Mai 2014 à 13:08
 -- Version du serveur: 5.6.12-log
 -- Version de PHP: 5.4.12
 
@@ -124,6 +124,17 @@ INSERT INTO `composition` (`id_match`, `id_joueur`, `statut`) VALUES
 (69, 3, 'titulaire'),
 (69, 6, 'remplacant'),
 (69, 8, 'titulaire'),
+(70, 1, 'remplacant'),
+(70, 4, 'remplacant'),
+(70, 7, 'titulaire'),
+(70, 10, 'titulaire'),
+(70, 11, 'titulaire'),
+(70, 13, 'titulaire'),
+(70, 14, 'titulaire'),
+(70, 15, 'titulaire'),
+(70, 16, 'remplacant'),
+(70, 17, 'remplacant'),
+(70, 18, 'remplacant'),
 (71, 1, 'titulaire'),
 (71, 4, 'remplacant');
 
@@ -239,7 +250,7 @@ CREATE TABLE IF NOT EXISTS `timeline` (
   `date` varchar(20) COLLATE utf8_bin NOT NULL,
   `message` varchar(500) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`num`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=23 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=24 ;
 
 --
 -- Contenu de la table `timeline`
