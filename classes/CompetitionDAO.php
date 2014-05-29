@@ -11,7 +11,7 @@
 		public function create($c) {
 			$nom = $c->getNom();
 
-        $sql = "INSERT INTO `match_fff`.`competition` (`id`, `nom`) VALUES (NULL,'".$nom."');";
+        $sql = "CALL `ajout_competition`('".$nom."');";
 		echo ($sql);
         $requete_create=$this->connexion->query($sql) or die ("marche pas ");
 		}

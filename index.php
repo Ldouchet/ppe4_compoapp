@@ -32,7 +32,6 @@ if (!isset($_SESSION['statut'])){
     }
 
 }
-
 switch($uc)
 {
 	case 'connexion':
