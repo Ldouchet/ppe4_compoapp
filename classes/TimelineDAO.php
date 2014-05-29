@@ -1,6 +1,6 @@
 <?php
-require_once('/classes/MysqlDAO.php');
-require_once('/classes/Timeline.php');
+require_once('MysqlDAO.php');
+require_once('Timeline.php');
 
 class TimelineDAO extends MysqlDAO {
 

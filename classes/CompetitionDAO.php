@@ -1,6 +1,6 @@
 <?php
-	require_once('/classes/MysqlDAO.php');
-	require_once('/classes/Competition.php');
+	require_once('MysqlDAO.php');
+	require_once('Competition.php');
 
 	class CompetitionDAO extends MysqlDAO {
 		

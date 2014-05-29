@@ -1,6 +1,6 @@
 <?php
-require_once('/classes/MysqlDAO.php');
-require_once('/classes/Joueur.php');
+require_once('MysqlDAO.php');
+require_once('Joueur.php');
 
 class JoueurDAO extends MysqlDAO {
 

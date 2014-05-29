@@ -1,6 +1,6 @@
 <?php
-require_once('/classes/MysqlDAO.php');
-require_once('/classes/Match.php');
+require_once('MysqlDAO.php');
+require_once('Match.php');
 
 class MatchDAO extends MysqlDAO {
 

@@ -1,5 +1,5 @@
 <?php
-require_once('/classes/IDAO.php');
+require_once('IDAO.php');
 
 abstract class MysqlDAO implements IDAO {
 	
