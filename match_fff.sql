@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Mer 28 Mai 2014 à 13:08
+-- Généré le: Jeu 29 Mai 2014 à 22:18
 -- Version du serveur: 5.6.12-log
 -- Version de PHP: 5.4.12
 
@@ -21,6 +21,25 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `match_fff` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
 USE `match_fff`;
+
+DELIMITER $$
+--
+-- Procédures
+--
+CREATE DEFINER=`root`@`localhost` PROCEDURE `ajout_competition`(IN `nom` VARCHAR(100) CHARSET utf8)
+    NO SQL
+BEGIN
+INSERT INTO `match_fff`.`competition` (
+`id` ,
+`nom`
+)
+VALUES (
+NULL , 
+nom
+);
+END$$
+
+DELIMITER ;
 
 -- --------------------------------------------------------
 
@@ -66,7 +85,7 @@ CREATE TABLE IF NOT EXISTS `competition` (
   `nom` varchar(100) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id` (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
 
 --
 -- Contenu de la table `competition`
@@ -81,7 +100,8 @@ INSERT INTO `competition` (`id`, `nom`) VALUES
 (8, 'Ligue bobobobo'),
 (9, 'ligue marron'),
 (10, 'Ligue des poussins'),
-(11, 'Coupe de champagne ');
+(11, 'Coupe de champagne '),
+(16, 'Coupe procedurale');
 
 -- --------------------------------------------------------
 
@@ -250,7 +270,7 @@ CREATE TABLE IF NOT EXISTS `timeline` (
   `date` varchar(20) COLLATE utf8_bin NOT NULL,
   `message` varchar(500) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`num`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=24 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=23 ;
 
 --
 -- Contenu de la table `timeline`
